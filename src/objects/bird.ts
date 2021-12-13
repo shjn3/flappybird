@@ -47,6 +47,7 @@ export class Bird extends Phaser.GameObjects.Image {
       alpha: { start: 0.5, end: 0 },
       lifespan: 100,
       scale: 3,
+      blendMode: "ERAZE",
       rotate: {
         onEmit: () => {
           return this.angle;
